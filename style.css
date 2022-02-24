@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+--Blue: hsl(246, 80%, 60%);
+--Light-red-work: hsl(15, 100%, 70%);
+--Soft-blue-play: hsl(195, 74%, 62%);
+--Light-red-study: hsl(348, 100%, 68%);
+--Lime-green-exercise-: hsl(145, 58%, 55%);
+--Violet-social: hsl(264, 64%, 52%);
+--Soft-orange-self-care:hsl(43, 84%, 65%);
+--Very-dark-blue: hsl(226, 43%, 10%);
+--Dark-blue: hsl(235, 46%, 20%);
+--Desaturated-blue: hsl(235, 45%, 61%);
+--Pale-Blue: hsl(236, 100%, 87%);
+}
+body{
+    color:white;
+    background-color: var(--Very-dark-blue);
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+h1{
+    font-size: 3.5rem;
+    font-weight: lighter;
+    margin: 5px 0;
+}
+p{
+    font-size: 18px;
+    color:var(--Pale-Blue);
+}
+.work-name p{
+    color:white;
+    font-weight: 500;
+}
+.container{
+    padding: 5% 5% 4%;
+}
+.content{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+}
+
+/* people */
+.person-information{
+    background-color: var(--Dark-blue);
+    margin-right: 20px;
+    border-radius: 20px;
+    height:580px; 
+}
+.person{
+    background-color: var(--Blue);
+    padding: 2rem;
+    border-radius: 20px;
+}
+.person-img img{
+    border: 3px solid white;
+    border-radius: 50%;
+    height:120px;
+    margin-bottom: 30px;
+}
+.person-name h1{
+    margin-bottom: 20px;
+}
+.timing{
+    padding: 1rem 2rem;
+}
+.timing p{
+    margin: 20px 0;
+    cursor: pointer;
+}
+.timing p:hover{
+    color: white;
+}
+
+/* card */
+.person-work-details-1,.person-work-details-2{ 
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 20px;
+} 
+.main-div{
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+.background-1{
+    background-color: var(--Light-red-work);
+    background-image: url("images/icon-work.svg")  ;
+}
+.background-2{
+    background-color: var(--Soft-blue-play);
+    background-image: url("images/icon-play.svg")  ;
+}
+.background-3{
+    background-color: var(--Light-red-study);
+    background-image: url("images/icon-study.svg")  ;
+}
+.background-4{
+    background-color: var(--Lime-green-exercise-);
+    background-image: url("images/icon-exercise.svg")  ;
+}
+.background-5{
+    background-color: var(--Violet-social);
+    background-image: url("images/icon-social.svg")  ;
+}
+.background-6{
+    background-color: var(--Soft-orange-self-care);
+    background-image: url("images/icon-self-care.svg")  ;
+}
+.content-div{
+    position: relative;
+    top:1px;
+    background-color: var(--Dark-blue);
+    padding: 30px 30px 40px 30px;
+    margin-top: 55px;
+    border-radius: 20px;
+}
+.work-name{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.work-name img{
+    width: 20px;
+    height: 5px;   
+}
+.work-hour h1{
+    margin-bottom:10px;
+}
+
+footer {
+    /* display: flex; */
+    text-align: center;
+    color: aliceblue;
+}
+a{
+    color: aliceblue;
+}
+
+@media (max-width:508px)  {
+
+    .content{
+         display: flex;
+         flex-direction: column; 
+    }
+    p{
+        font-size:15px;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    .person-information{
+        margin-right: 0;
+        justify-content: center;
+        height:200px;
+        margin-bottom: 20px;
+    }
+
+    .person-img img{
+        height:50px;        
+    }
+    .person{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 2rem 5px;
+    }
+    .timing{
+        padding-top: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-div{
+        margin-bottom: 0;
+    }
+    .content-div{
+        margin-top: 38px;
+        padding-bottom: 15px;
+    }
+    .work-name{
+        margin-bottom: 5px;
+    }
+    .work-hour{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .person-work-details-1,.person-work-details-2{
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+    }
+    .person-work-details-1 h1{
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
